@@ -28,6 +28,13 @@ update AddressBook_Table set Email='samsth@gmail.com' where firstName='Sam'
 --UC5--
 Delete AddressBook_Table where FirstName='Sam'
 
+--UC6--
+select City,State from AddressBook_Table;
+select * from AddressBook_Table where State='New_York' 
+select * from AddressBook_Table where City='Trevor' or state='New_York'
+
+
+
 
 
 
