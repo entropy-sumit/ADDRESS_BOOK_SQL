@@ -14,3 +14,13 @@ ZipCode int not null,
 PhoneNumber varchar(12),
 Email varchar(20) not null
 )
+
+--UC3--
+INSERT INTO AddressBook_Table(FirstName,LastName,Address,City,State,ZipCode,PhoneNumber,Email) 
+values('Jon','Eva','streetA','Trevor','New_York','4121','889568956','jon@gmail.com')
+
+
+
+
+
+
