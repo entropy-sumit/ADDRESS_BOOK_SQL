@@ -19,6 +19,12 @@ Email varchar(20) not null
 INSERT INTO AddressBook_Table(FirstName,LastName,Address,City,State,ZipCode,PhoneNumber,Email) 
 values('Jon','Eva','streetA','Trevor','New_York','4121','889568956','jon@gmail.com')
 
+--UC4--
+update AddressBook_Table set ZipCode=222145 where FirstName='Jon';
+select * from AddressBook_Table;
+
+update AddressBook_Table set Email='samsth@gmail.com' where firstName='Sam'
+
 
 
 
