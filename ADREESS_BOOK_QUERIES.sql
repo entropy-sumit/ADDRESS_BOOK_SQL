@@ -52,5 +52,18 @@ order by (FirstName);
 
 
 
+--UC9--
+alter table AddressBook_Table add Name varchar(255),Type varchar(255);
+select * from AddressBook_Table
 
+update AddressBook_Table set Name='Alina';
+
+update AddressBook_Table set Type ='Wife' where firstName='Joshep';
+select * from AddressBook_Table;
+
+update AddressBook_Table set Type ='Friend' where firstName='Jhon'; 
+select * from AddressBook_Table;
+
+update AddressBook_Table set Type ='Friend' where firstName='Jon'; 
+select * from AddressBook_Table;
 
