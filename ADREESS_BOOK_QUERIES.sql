@@ -33,7 +33,16 @@ select City,State from AddressBook_Table;
 select * from AddressBook_Table where State='New_York' 
 select * from AddressBook_Table where City='Trevor' or state='New_York'
 
+--UC7--
+select COUNT(City) from AddressBook_Table
 
+select City, count(*) as AddressCount
+from AddressBook_Table group by (City);
+
+select COUNT(State) from AddressBook_Table
+
+select state, count(*) as AddressCount
+from AddressBook_Table group by (state);
 
 
 
