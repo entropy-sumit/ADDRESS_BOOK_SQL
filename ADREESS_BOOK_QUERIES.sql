@@ -17,7 +17,7 @@ Email varchar(20) not null
 
 --UC3--
 INSERT INTO AddressBook_Table(FirstName,LastName,Address,City,State,ZipCode,PhoneNumber,Email) 
-values('Joshep','Dia','streetC','Morvor','Las_Angel','41221','229568956','josh@gmail.com')
+values('Jhon','Wick','streetD','Morvor','Las_Angel','999765','9568956885','jhn@gmail.com')
 
 --UC4--
 update AddressBook_Table set ZipCode=222145 where FirstName='Jon';
@@ -43,6 +43,13 @@ select COUNT(State) from AddressBook_Table
 
 select state, count(*) as AddressCount
 from AddressBook_Table group by (state);
+
+--UC8--
+select * from AddressBook_Table order by city ASC; 
+
+select * from AddressBook_Table where city = 'Morvor'
+order by (FirstName);
+
 
 
 
