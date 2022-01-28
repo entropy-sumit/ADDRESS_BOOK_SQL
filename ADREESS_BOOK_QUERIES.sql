@@ -67,3 +67,10 @@ select * from AddressBook_Table;
 update AddressBook_Table set Type ='Friend' where firstName='Jon'; 
 select * from AddressBook_Table;
 
+
+--UC10--
+select count(Type) from AddressBook_Table;
+
+select Type, count(*) as Times_Count 
+from AddressBook_Table group by Type;
+
